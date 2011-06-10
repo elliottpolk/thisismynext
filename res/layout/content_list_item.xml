@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.p2s.android.apps.thisismynext.util.SelectableFrameLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent" 
+	android:layout_height="match_parent" >
+	<RelativeLayout 
+		android:id="@+id/contentlist_item_relativelayout"
+		android:layout_width="match_parent" 
+   		android:layout_height="@dimen/contentlist_item_height"
+   		android:background="#fff" >
+		<View 
+        	android:id="@+id/read_indicator" 
+        	android:layout_width="8dp" 
+        	android:layout_height="match_parent"
+        	android:background="#f26522" />
+       	<TextView
+    		android:id="@+id/meta_text"
+    		android:layout_width="match_parent"
+    		android:layout_height="wrap_content"
+    		android:textIsSelectable="false"
+    		android:textColor="@color/timn_orange"
+    		android:textSize="4pt"
+    		android:paddingLeft="@dimen/contentlist_item_paddingLeft"
+    		android:paddingTop="2dp"
+    		android:text="meta" />
+    	<TextView
+    		android:id="@+id/title_text"
+    		android:layout_width="match_parent"
+    		android:layout_height="wrap_content"
+    		android:textIsSelectable="false"
+    		android:textColor="@color/timn_black"
+    		android:textSize="7pt"
+    		android:text="post title"
+    		android:paddingTop="10dp"
+    		android:paddingLeft="@dimen/contentlist_item_paddingLeft"
+    		android:layout_alignParentTop="true" />
+    	<TextView
+    		android:id="@+id/read_more"
+    		android:layout_width="match_parent"
+    		android:layout_height="wrap_content"
+    		android:textIsSelectable="false"
+    		android:textColor="@color/timn_orange"
+    		android:textSize="4pt"
+    		android:layout_alignParentBottom="true"
+    		android:layout_alignRight="@id/contentlist_item_relativelayout"
+    		android:paddingRight="4dp"
+    		android:gravity="right"
+    		android:text="read more..." />
+   	</RelativeLayout>
+</com.p2s.android.apps.thisismynext.util.SelectableFrameLayout>

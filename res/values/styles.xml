@@ -1,0 +1,58 @@
+<resources>
+	<style name="Theme" parent="android:style/Theme" />
+	
+	<style name="Theme.TIMN" parent="android:style/Theme.Light">
+		<item name="android:windowNoTitle">true</item>
+		<item name="android:windowContentOverlay">@null</item>
+		
+		<item name="actionbarLayoutStyle">@style/ActionBar</item>
+		<item name="actionbarPrevBtnStyle">@style/ActionBar_PrevBtn</item>
+		<item name="actionbarNextBtnStyle">@style/ActionBar_NextBtn</item>
+		<item name="actionbarDividerStyle">@style/ActionBar_Divider</item>
+		<item name="actionbarIconStyle">@style/ActionBar_Icon</item>
+	</style>
+	
+	<style name="ActionBar">
+		<item name="android:id">@id/actionbar</item>
+		<item name="android:layout_width">fill_parent</item>
+		<item name="android:layout_height">@dimen/actionbar_height</item>
+		<item name="android:background">@color/timn_black</item>
+	</style>
+	
+	<style name="ActionBar_PrevBtn">
+		<item name="android:id">@id/actionbar_prev</item>
+		<item name="android:layout_width">wrap_content</item>
+		<item name="android:layout_height">wrap_content</item>
+		<item name="android:layout_marginRight">@dimen/actionbar_prev_mright</item>
+		<item name="android:layout_marginTop">@dimen/actionbar_prev_mtop</item>
+		<item name="android:layout_alignParentRight">true</item>
+		<item name="android:background">@drawable/ic_action_prev</item>
+	</style>
+	
+	<style name="ActionBar_NextBtn">
+		<item name="android:id">@id/actionbar_next</item>
+		<item name="android:layout_width">wrap_content</item>
+		<item name="android:layout_height">wrap_content</item>
+		<item name="android:layout_marginTop">@dimen/actionbar_next_mtop</item>
+		<item name="android:layout_alignParentRight">true</item>
+		<item name="android:background">@drawable/ic_action_next</item>
+	</style>
+	
+	<style name="ActionBar_Divider">
+		<item name="android:id">@id/actionbar_divider</item>
+		<item name="android:layout_width">1px</item>
+		<item name="android:layout_height">match_parent</item>
+		<item name="android:layout_toLeftOf">@id/actionbar_next</item>
+		<item name="android:layout_marginTop">@dimen/actionbar_divider_mtop</item>
+		<item name="android:layout_marginRight">@dimen/actionbar_divider_mright</item>
+		<item name="android:layout_marginBottom">@dimen/actionbar_divider_mbottom</item>
+		<item name="android:background">@color/actionbar_divider_grey</item>
+	</style>
+	
+	<style name="ActionBar_Icon">
+		<item name="android:id">@id/actionbar_icon</item>
+		<item name="android:layout_width">wrap_content</item>
+		<item name="android:layout_height">wrap_content</item>
+		<item name="android:src">@drawable/ic_launcher</item>
+	</style>
+</resources>

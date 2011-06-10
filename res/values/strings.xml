@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">thisismynext</string>
+    <string name="thisismynext_uri">http://thisismynext.com/</string>
+    <string name="loading">loading...</string>
+</resources>

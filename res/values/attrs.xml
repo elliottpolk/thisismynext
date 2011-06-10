@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<declare-styleable name="AppTheme">
+		<attr name="actionbarLayoutStyle" format="reference" />
+		<attr name="actionbarPrevBtnStyle" format="reference" />
+		<attr name="actionbarNextBtnStyle" format="reference" />
+		<attr name="actionbarDividerStyle" format="reference" />
+		<attr name="actionbarIconStyle" format="reference" />
+	</declare-styleable>
+</resources>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout 
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:id="@+id/detailitem_frame"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	android:background="#fff">
+	<include layout="@layout/actionbar" />
+
+	<fragment 
+		android:name="com.p2s.android.apps.thisismynext.fragments.PostFragment"
+		android:id="@+id/detailitem_post" 
+		android:layout_width="fill_parent"
+		android:layout_height="fill_parent" />
+		
+	<fragment
+		android:name="com.p2s.android.apps.thisismynext.fragments.GalleryFragment"
+		android:id="@+id/detailitem_post_gallery" 
+		android:layout_width="fill_parent"
+		android:layout_height="fill_parent" />
+</FrameLayout>

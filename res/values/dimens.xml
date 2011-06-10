@@ -1,0 +1,17 @@
+<resources>
+	<dimen name="actionbar_height">45dp</dimen>
+	<dimen name="actionbar_prev_mright">55dp</dimen>
+	<dimen name="actionbar_prev_mtop">5dp</dimen>
+	<dimen name="actionbar_next_mtop">5dp</dimen>
+	<dimen name="actionbar_divider_mtop">4dp</dimen>
+	<dimen name="actionbar_divider_mright">11dp</dimen>
+	<dimen name="actionbar_divider_mbottom">4dp</dimen>
+	
+	<dimen name="loadingbar_width">200dp</dimen>
+	<dimen name="loadingbar_height">10dp</dimen>
+	<dimen name="contentlist_item_height">80dp</dimen>
+	<dimen name="contentlist_item_paddingLeft">12dp</dimen>
+	
+	<dimen name="detailitem_padding">4dp</dimen>
+	<dimen name="detailitem_mleft">45dp</dimen>
+</resources>
