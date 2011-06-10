@@ -3,7 +3,7 @@
 	android:layout_width="fill_parent"
 	android:layout_height="fill_parent" >
 	<include layout="@layout/actionbar"
-		android:id="@+id/actionbar_include"
+		android:id="@+id/actionbar_post_include"
 		android:layout_width="fill_parent" 
 		android:layout_height="@dimen/actionbar_height" />
 		
@@ -11,7 +11,7 @@
 		android:id="@+id/detailitem_scroller"
 		android:layout_width="fill_parent"
 		android:layout_height="fill_parent"
-		android:layout_below="@id/actionbar_include"
+		android:layout_below="@id/actionbar_post_include"
 		android:background="#fff">
 		
 		<RelativeLayout 

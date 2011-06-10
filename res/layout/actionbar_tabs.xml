@@ -1,0 +1,49 @@
+<RelativeLayout 
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:id="@+id/actionbar_tab_layout" 
+	android:layout_width="wrap_content" 
+	android:layout_height="@dimen/actionbar_height"
+	android:background="@color/timn_black" >
+	
+	<ImageView style="@style/ActionBar_Icon" />
+	<Button 
+		android:id="@+id/actionbar_tab_post"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:text="@string/post_label"
+		android:textSize="8pt"
+		android:textColor="#fff"
+		android:background="@color/timn_black"
+		android:layout_alignParentRight="true"
+		android:layout_marginTop="11dp"
+		android:layout_marginRight="10dp" />
+	<View 
+		android:id="@+id/actionbar_tab_post_view"
+		android:layout_width="83px"
+		android:layout_height="4px"
+		android:background="@color/timn_orange"
+		android:layout_alignParentRight="true"
+		android:layout_alignParentBottom="true" />
+	<Button
+		android:id="@+id/actionbar_tab_gallery"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:text="@string/gallery_label"
+		android:textSize="8pt"
+		android:textColor="#fff"
+		android:background="@color/timn_black"
+		android:layout_marginTop="11dp"
+		android:layout_marginRight="10dp"
+		android:layout_toLeftOf="@id/actionbar_divider" />
+	<View
+		android:id="@+id/actionbar_tab_gallery_view"
+		android:layout_width="108px"
+		android:layout_height="4px"
+		android:background="@color/timn_orange"
+		android:layout_marginRight="6px"
+		android:layout_toLeftOf="@id/actionbar_tab_post_view"
+		android:layout_alignParentBottom="true" />
+	<View 
+		style="@style/ActionBar_Divider"
+		android:layout_toLeftOf="@id/actionbar_tab_post" />
+</RelativeLayout>

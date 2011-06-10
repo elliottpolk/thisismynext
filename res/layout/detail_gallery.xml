@@ -1,3 +1,25 @@
-<FrameLayout 
-	xmlns:android="http://schemas.android.com/apk/res/android" >
-</FrameLayout>
+<RelativeLayout 
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent" >
+	<include layout="@layout/actionbar_tabs"
+		android:id="@+id/actionbar_gal_include"
+		android:layout_width="fill_parent"
+		android:layout_height="@dimen/actionbar_height" />
+	
+	<ImageSwitcher 
+		android:id="@+id/detailgallery_switcher"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true" />
+        
+	<Gallery 
+		android:id="@+id/detail_gallery"
+		android:layout_width="match_parent"
+		android:layout_height="60dp"
+		android:layout_alignParentBottom="true"
+		android:layout_alignParentLeft="true"
+		android:gravity="center_vertical"
+		android:spacing="10dp" />
+</RelativeLayout>
