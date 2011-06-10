@@ -5,10 +5,12 @@ package com.p2s.android.apps.thisismynext.fragments;
 
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
+import android.text.Html;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.ScrollView;
+import android.widget.Button;
+import android.widget.RelativeLayout;
 import android.widget.TextView;
 
 import com.p2s.android.apps.thisismynext.R;
@@ -36,18 +38,22 @@ public class PostFragment extends Fragment {
             Bundle savedInstanceState) {
         if (container == null) return null;
 
-        Content cItem = new Content(getActivity(), getArguments().getLong("cId"));
-        ScrollView scroller = (ScrollView)inflater.inflate(R.layout.detail_post, null);
         
-        TextView titleView = (TextView)scroller.findViewById(R.id.detailitem_post_title);
+        Content cItem = new Content(getActivity(), getArguments().getLong("cId"));
+        RelativeLayout postLayout = (RelativeLayout)inflater.inflate(R.layout.detail_post, null);
+        
+//        Button prev = (Button)postLayout.findViewById(R.id.actionbar_prev);
+//        Button next = (Button)postLayout.findViewById(R.id.actionbar_next);
+        
+        TextView titleView = (TextView)postLayout.findViewById(R.id.detailitem_post_title);
         titleView.setText(cItem.getTitle());
         
-        TextView pubInfoView = (TextView)scroller.findViewById(R.id.detailitem_pubinfo);
+        TextView pubInfoView = (TextView)postLayout.findViewById(R.id.detailitem_pubinfo);
         pubInfoView.setText("by "+cItem.getAuthor()+cItem.getPostedAt());
         
-        TextView postView = (TextView)scroller.findViewById(R.id.detailitem_post);
-        postView.setText(cItem.getPost());
+        TextView postView = (TextView)postLayout.findViewById(R.id.detailitem_post);
+        postView.setText(Html.fromHtml(cItem.getPost()));
         
-        return scroller;
+        return postLayout;
     }
 }

@@ -3,4 +3,6 @@
     <string name="app_name">thisismynext</string>
     <string name="thisismynext_uri">http://thisismynext.com/</string>
     <string name="loading">loading...</string>
+    <string name="gallery_label">gallery</string>
+    <string name="post_label">post</string>
 </resources>

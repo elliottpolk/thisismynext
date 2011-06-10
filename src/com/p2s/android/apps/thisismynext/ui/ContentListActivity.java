@@ -30,7 +30,6 @@ public class ContentListActivity extends FragmentActivity {
         requestWindowFeature(Window.FEATURE_NO_TITLE);
         setContentView(R.layout.content_list);
         
-//        LayoutInflater inflator = (LayoutInflater)getApplication().getSystemService(LAYOUT_INFLATER_SERVICE);
         RelativeLayout actionbar = (RelativeLayout)this.findViewById(R.id.actionbar);
         ImageView homeBtn = (ImageView)actionbar.findViewById(R.id.actionbar_icon);
         

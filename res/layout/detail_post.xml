@@ -1,50 +1,59 @@
-<ScrollView
+<RelativeLayout
 	xmlns:android="http://schemas.android.com/apk/res/android"
-	android:id="@+id/detailitem_scroller"
 	android:layout_width="fill_parent"
-	android:layout_height="fill_parent"
-	android:background="#fff">
-	
-	<RelativeLayout 
-		android:id="@+id/detailitem_post_layout"
+	android:layout_height="fill_parent" >
+	<include layout="@layout/actionbar"
+		android:id="@+id/actionbar_include"
+		android:layout_width="fill_parent" 
+		android:layout_height="@dimen/actionbar_height" />
+		
+	<ScrollView
+		android:id="@+id/detailitem_scroller"
 		android:layout_width="fill_parent"
 		android:layout_height="fill_parent"
-		android:padding="@dimen/detailitem_padding"
-		android:background="#fff" >
-		<TextView 
-			android:id="@+id/detailitem_post_title"
-			android:layout_width="fill_parent"
-			android:layout_height="wrap_content"
-			android:textColor="@color/timn_orange"
-			android:textSize="10pt"
-			android:gravity="top"
-			android:text="title" />
-		<TextView 
-			android:id="@+id/detailitem_pubinfo"
-			android:layout_width="fill_parent"
-			android:layout_height="wrap_content"
-			android:textColor="@color/timn_black"
-			android:textSize="4pt"
-			android:gravity="right"
-			android:layout_below="@id/detailitem_post_title"
-			android:text="published" />
-		<View 
-			android:id="@+id/detailitem_divider" 
-			android:layout_width="fill_parent"
-			android:layout_height="1px"
-			android:background="@color/timn_orange"
-			android:layout_marginLeft="@dimen/detailitem_mleft"
-			android:layout_below="@id/detailitem_pubinfo" />
-		<TextView
-			android:id="@+id/detailitem_post"
+		android:layout_below="@id/actionbar_include"
+		android:background="#fff">
+		
+		<RelativeLayout 
+			android:id="@+id/detailitem_post_layout"
 			android:layout_width="fill_parent"
 			android:layout_height="fill_parent"
-			android:background="#fff"
-			android:textSize="8pt"
-			android:textColor="#000"
-			android:layout_below="@id/detailitem_divider"
-			android:paddingTop="8dp"
-			android:text="post" />
-			
-	</RelativeLayout>
-</ScrollView>
+			android:padding="@dimen/detailitem_padding"
+			android:background="#fff" >
+			<TextView 
+				android:id="@+id/detailitem_post_title"
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:textColor="@color/timn_orange"
+				android:textSize="10pt"
+				android:gravity="top"
+				android:text="title" />
+			<TextView 
+				android:id="@+id/detailitem_pubinfo"
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:textColor="@color/timn_black"
+				android:textSize="4pt"
+				android:gravity="right"
+				android:layout_below="@id/detailitem_post_title"
+				android:text="published" />
+			<View 
+				android:id="@+id/detailitem_divider" 
+				android:layout_width="fill_parent"
+				android:layout_height="1px"
+				android:background="@color/timn_orange"
+				android:layout_marginLeft="@dimen/detailitem_mleft"
+				android:layout_below="@id/detailitem_pubinfo" />
+			<TextView
+				android:id="@+id/detailitem_post"
+				android:layout_width="fill_parent"
+				android:layout_height="fill_parent"
+				android:background="#fff"
+				android:textSize="7pt"
+				android:textColor="#000"
+				android:layout_below="@id/detailitem_divider"
+				android:paddingTop="8dp"
+				android:text="post" />
+		</RelativeLayout>
+	</ScrollView>
+</RelativeLayout>

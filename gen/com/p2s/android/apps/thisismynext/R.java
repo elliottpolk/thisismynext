@@ -62,25 +62,27 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         public static final int actionbar_container=0x7f060001;
         public static final int actionbar_divider=0x7f060005;
         public static final int actionbar_icon=0x7f060002;
+        public static final int actionbar_include=0x7f060012;
         public static final int actionbar_next=0x7f060004;
         public static final int actionbar_prev=0x7f060003;
         public static final int contentlist_item_relativelayout=0x7f060008;
-        public static final int detailitem_divider=0x7f060014;
+        public static final int detailitem_divider=0x7f060016;
         public static final int detailitem_frame=0x7f06000d;
-        public static final int detailitem_post=0x7f06000e;
-        public static final int detailitem_post_gallery=0x7f06000f;
-        public static final int detailitem_post_layout=0x7f060011;
-        public static final int detailitem_post_title=0x7f060012;
-        public static final int detailitem_pubinfo=0x7f060013;
-        public static final int detailitem_scroller=0x7f060010;
+        public static final int detailitem_post=0x7f06000f;
+        public static final int detailitem_post_gallery=0x7f060011;
+        public static final int detailitem_post_gallery_layout=0x7f060010;
+        public static final int detailitem_post_layout=0x7f06000e;
+        public static final int detailitem_post_title=0x7f060014;
+        public static final int detailitem_pubinfo=0x7f060015;
+        public static final int detailitem_scroller=0x7f060013;
         public static final int details=0x7f060007;
-        public static final int loading_bar=0x7f060017;
-        public static final int loading_layout=0x7f060015;
-        public static final int loading_text=0x7f060018;
+        public static final int loading_bar=0x7f060019;
+        public static final int loading_layout=0x7f060017;
+        public static final int loading_text=0x7f06001a;
         public static final int meta_text=0x7f06000a;
         public static final int read_indicator=0x7f060009;
         public static final int read_more=0x7f06000c;
-        public static final int thisismynext_text=0x7f060016;
+        public static final int thisismynext_text=0x7f060018;
         public static final int title_text=0x7f06000b;
         public static final int titles=0x7f060006;
     }
@@ -95,7 +97,9 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
     }
     public static final class string {
         public static final int app_name=0x7f070000;
+        public static final int gallery_label=0x7f070003;
         public static final int loading=0x7f070002;
+        public static final int post_label=0x7f070004;
         public static final int thisismynext_uri=0x7f070001;
     }
     public static final class style {

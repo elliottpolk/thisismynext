@@ -20,7 +20,7 @@ import android.widget.ListView;
 import android.widget.TextView;
 
 import com.p2s.android.apps.thisismynext.R;
-import com.p2s.android.apps.thisismynext.ui.DetailsActivity;
+import com.p2s.android.apps.thisismynext.ui.PostActivity;
 import com.p2s.android.apps.thisismynext.util.Content;
 import com.p2s.android.apps.thisismynext.util.Content.ContentDBAdaptor;
 
@@ -63,7 +63,7 @@ public class ContentListFragment extends ListFragment {
         mCurCheckPosition = index;
         
         Intent intent = new Intent();
-        intent.setClass(getActivity(), DetailsActivity.class);
+        intent.setClass(getActivity(), PostActivity.class);
         intent.putExtra("index", index);
         intent.putExtra("cId", Long.parseLong(((Content)content.get(index)).getId()));
         startActivity(intent);
