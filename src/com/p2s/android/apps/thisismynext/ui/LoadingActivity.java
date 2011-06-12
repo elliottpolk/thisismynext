@@ -35,7 +35,7 @@ public class LoadingActivity extends Activity {
         super.onCreate(savedInstanceState);
         requestWindowFeature(Window.FEATURE_NO_TITLE);
         
-        setContentView(R.layout.loading);
+        setContentView(R.layout.init_loading);
         
         TextView tv = (TextView)this.findViewById(R.id.thisismynext_text);
         SpannableString str = new SpannableString(tv.getText());

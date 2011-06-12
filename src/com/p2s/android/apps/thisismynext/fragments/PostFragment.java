@@ -53,6 +53,8 @@ public class PostFragment extends Fragment {
         actionbar.removeView((View)postLayout.findViewById(R.id.actionbar_divider));
         
         RelativeLayout tabs = (RelativeLayout)inflater.inflate(R.layout.actionbar_tabs, null);
+        tabs.removeView((View)tabs.findViewById(R.id.actionbar_tab_gallery_view));
+
         actionbar.addView(tabs);
         
         if(cItem.getGallery().size() > 0) {
@@ -69,7 +71,6 @@ public class PostFragment extends Fragment {
         	});
         }else {
         	tabs.removeView((Button)tabs.findViewById(R.id.actionbar_tab_gallery));
-        	tabs.removeView((View)tabs.findViewById(R.id.actionbar_tab_gallery_view));
         	tabs.removeView((View)tabs.findViewById(R.id.actionbar_divider));
         }
         ((ImageView)tabs.findViewById(R.id.actionbar_icon)).setOnClickListener(new OnClickListener() {

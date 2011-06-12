@@ -5,6 +5,6 @@
 	<item type="id" name="actionbar_prev" />
 	<item type="id" name="actionbar_next" />
 	<item type="id" name="actionbar_divider" />
-	
+	<item type="id" name="actionbar_tab_divider" />
 	
 </resources>
