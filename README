@@ -1,0 +1,7 @@
+Simple android app that scraps the html from thisismynext.com
+
+It was created because the stock Android browser had a hard time loading the high resolution images the site used, eventually grinding to a halt and making the site unreadable on a device (like the Nexus S). The app would scrap the site and display the text from each post, pulling out the images. It then had a gallery tab that would allow the user to view the images in a reduced size.
+
+The site is no longer available, as it was a temporary project while the creators worked on building The Verge (theverge.com). The app isn't really useful and was never released to the pubic since it was just for me and I didn't really have their permission. I'm putting it out there if anyone would like to see the libs used.
+
+Enjoy!
